@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css'
 import InitState from './pages/initState';
+import Nuv from './pages/notUpdateValue';
 
 function App() {
 
@@ -22,10 +23,12 @@ function App() {
         <nav style={{ padding: '3rem', borderBottom: '1px solid #ccc' }}>
           <Link to="/init-state">InitState</Link>
           <br></br>
+          <Link to="/nuv">notUpdateValue</Link>
         </nav>
 
         <Routes>
           <Route path="/init-state" element={<InitState />} />
+          <Route path="/nuv" element={<Nuv />} />
         </Routes>
       </BrowserRouter>
       <p className="read-the-docs">
